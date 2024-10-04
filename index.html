@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--
+	このページはジェバンニが一晩どころか2時間でやってくれました。
+
+	わざわざこんなページのソースを見ているなんて暇人かな？？？
+
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈█████┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈██┈┈┈█┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈┈┈┈┈┈┈┈
+	┈██┈┈┈┈┈┈┈█┈██┈┈████┈┈┈███┈┈████┈┈┈████┈┈
+	┈█┈┈┈┈┈┈┈┈██┈┈┈██┈┈█┈┈█┈┈┈█┈┈█┈┈┈┈██┈┈█┈┈
+	┈█┈┈┈┈┈┈┈┈██┈┈┈█┈┈┈██┈┈┈┈┈█┈┈█┈┈┈┈█┈┈┈██┈
+	┈█┈┈┈┈┈┈┈┈█┈┈┈┈██████┈█████┈┈█┈┈┈┈██████┈
+	┈██┈┈┈┈┈┈┈█┈┈┈┈█┈┈┈┈┈┈█┈┈┈█┈┈█┈┈┈┈█┈┈┈┈┈┈
+	┈┈██┈┈┈█┈┈█┈┈┈┈██┈┈┈┈┈█┈┈██┈┈██┈┈┈██┈┈┈┈┈
+	┈┈┈████┈┈┈█┈┈┈┈┈████┈┈█████┈┈┈██┈┈┈████┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█████┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈█┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈█┈┈██┈┈┈█┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈█┈┈┈█┈┈┈█┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█████┈┈┈┈█┈┈█┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈█┈┈┈┈█┈█┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈██┈┈┈███┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈██┈┈┈██┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈██████┈┈┈┈┈█┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈█┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈██┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈████┈┈█┈███┈┈┈┈████┈┈█┈┈┈██┈┈██┈████┈┈┈┈
+	┈█┈┈┈┈┈██┈┈██┈┈██┈┈██┈┈█┈┈██┈┈█┈┈█┈┈┈┈┈┈┈
+	┈█┈┈┈┈┈█┈┈┈┈█┈┈█┈┈┈┈█┈┈█┈┈██┈┈█┈┈█┈┈┈┈┈┈┈
+	┈┈██┈┈┈█┈┈┈┈█┈┈█┈┈┈┈█┈┈█┈█┈██┈█┈┈┈██┈┈┈┈┈
+	┈┈┈┈█┈┈█┈┈┈┈█┈┈█┈┈┈┈█┈┈███┈┈██┈┈┈┈┈┈█┈┈┈┈
+	┈█┈┈█┈┈█┈┈┈┈█┈┈██┈┈██┈┈┈██┈┈██┈┈┈█┈┈█┈┈┈┈
+	┈████┈┈█┈┈┈┈█┈┈┈████┈┈┈┈█┈┈┈██┈┈┈████┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+	┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-language" content="ja">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="description" content="自己紹介ゲームのためだけに生み出されたページ">
+	<meta name="author" content="snows">
+	<title>introGame</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="game.js"></script>
+	<script>
+		readUrlGet();
+	</script>
+</head>
+<body>
+	<div id="form">
+		<h2>自己紹介ゲーム！</h2>
+		<form onsubmit="return game.start();">
+			<label>
+				<p>名前</p>
+				<input type="text" id="f_name" placeholder="例：山田太郎" maxlength="10" required />
+			</label>
+			<label>
+				<p class="p_info1">情報1</p>
+				<input type="text" id="f_info1" placeholder="例：" maxlength="30" required />
+			</label>
+			<label>
+				<p class="p_info2">情報2</p>
+				<input type="text" id="f_info2" placeholder="例：" maxlength="30" required />
+			</label>
+			<label>
+				<p class="p_info3">情報3</p>
+				<input type="text" id="f_info3" placeholder="例：" maxlength="30" required />
+			</label>
+			<label>
+				<p class="p_info4">情報4</p>
+				<input type="text" id="f_info4" placeholder="例：" maxlength="30" required />
+			</label>
+			<br><br>
+			<input type="submit" value="決定！">
+		</form>
+	</div>
+	<div id="game" style="display: none;">
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div>
+							<div class="t_title p_info1">情報1</div>
+							<div class="t_infos">
+								<div id="g_info1"></div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div>
+							<div class="t_title p_info2">情報2</div>
+							<div class="t_infos">
+								<div id="g_info2"></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<div class="t_title p_info3">情報3</div>
+							<div class="t_infos">
+								<div id="g_info3"></div>
+							</div>
+						</div>
+					</td>
+					<td>
+						<div>
+							<div class="t_title p_info4">情報4</div>
+							<div class="t_infos">
+								<div id="g_info4"></div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="overlay">
+			<div>
+				<div>
+					<div id="t_name"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

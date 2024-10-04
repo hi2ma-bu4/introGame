@@ -1,0 +1,141 @@
+
+:root {
+	--Gothic: 'Helvetica Neue',Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;
+	--MingDynasty: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+}
+
+
+* {
+	font-family: var(--Gothic);
+}
+
+html, body {
+	font-size: 16px;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	width: 100%;
+}
+body {
+	overflow: hidden;
+}
+
+#form {
+	margin-left: .5em;
+}
+
+table, tbody {
+	border-collapse: collapse;
+	height: 98.5dvh;
+	width: 100dvw;
+}
+
+[type=text] {
+	max-width: 40%;
+	min-width: 10em;
+	width: 30em;
+}
+
+
+tr, td {
+	height: 49%;
+	width: 50%;
+}
+
+td {
+	border: 2px solid black;
+}
+
+td > div {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#game {
+	overflow: hidden;
+}
+
+.t_infos {
+	display: inline-block;
+	height: calc(100% - 4em);
+	position: relative;
+	width: 100%;
+}
+
+.t_infos > div {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 3em;
+	justify-content: center;
+	overflow-wrap: break-word;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(0, -50%);
+	vertical-align: middle;
+	width: 100%;
+	word-break: break-all;
+}
+
+.t_title {
+	font-family: var(--MingDynasty);
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#overlay {
+	height: 100%;
+	pointer-events: none;
+	position: absolute;
+	transform: translateY(-100%);
+	width: 100%;
+	z-index: 10;
+}
+
+#overlay > div {
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+#overlay > div > div {
+	display: inline-block;
+	height: 0;
+	overflow-wrap: break-word;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(0, -50%);
+	vertical-align: middle;
+	width: 100%;
+	word-break: break-all;
+}
+
+#t_name {
+	align-items: center;
+	background-color: #fff;
+	border: 2px solid black;
+	border-radius: 20%;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	font-size: 3em;
+	height: 2.5em;
+	justify-content: center;
+	left: 0;
+	line-height: 1em;
+	margin: 0 auto;
+	padding: 10px 0;
+	pointer-events: stroke;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	transform: translateY(-50%);
+	vertical-align: middle;
+	width: 5em;
+}
